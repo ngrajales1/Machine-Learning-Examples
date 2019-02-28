@@ -30,6 +30,9 @@ xor.add(Activation('tanh'))
 #adding output layer
 xor.add(Dense(1))
 
+#adding sigmoid activation layer
+xor.add(Activation('sigmoid'))
+
 # Specify loss as "binary_crossentropy", optimizer as "adam",
 # and add the accuracy metric
 # xor.compile()
