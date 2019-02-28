@@ -22,6 +22,8 @@ xor = Sequential()
 
 # Add required layers
 # xor.add()
+xor.add(Dense(8,input_dim=X.shape[1]))
+
 
 # Specify loss as "binary_crossentropy", optimizer as "adam",
 # and add the accuracy metric
