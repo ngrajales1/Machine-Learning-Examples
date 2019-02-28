@@ -27,6 +27,9 @@ xor.add(Dense(8,input_dim=X.shape[1]))
 #adding activation function
 xor.add(Activation('tanh'))
 
+#adding output layer
+xor.add(Dense(1))
+
 # Specify loss as "binary_crossentropy", optimizer as "adam",
 # and add the accuracy metric
 # xor.compile()
