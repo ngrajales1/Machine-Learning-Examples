@@ -28,7 +28,7 @@ xor.add(Dense(8,input_dim=X.shape[1]))
 xor.add(Activation('tanh'))
 
 #adding output layer
-xor.add(Dense(1))
+xor.add(Dense(2))
 
 #adding sigmoid activation layer
 xor.add(Activation('sigmoid'))
