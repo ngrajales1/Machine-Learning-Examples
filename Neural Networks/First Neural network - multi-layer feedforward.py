@@ -41,7 +41,7 @@ xor.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
 xor.summary()
 
 # Fitting the model
-history = xor.fit(X, y, nb_epoch=50, verbose=0)
+history = xor.fit(X, y, nb_epoch=273, verbose=0)
 
 # Scoring the model
 score = xor.evaluate(X, y)
