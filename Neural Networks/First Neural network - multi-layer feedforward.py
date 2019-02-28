@@ -22,7 +22,7 @@ xor = Sequential()
 
 # Add required layers
 # xor.add()
-xor.add(Dense(8,input_dim=X.shape[1]))
+xor.add(Dense(8,input_dim=2))
 
 #adding activation function
 xor.add(Activation('tanh'))
