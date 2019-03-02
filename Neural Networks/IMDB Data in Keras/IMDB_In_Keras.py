@@ -88,7 +88,8 @@ model.add(Dense(64, activation='sigmoid'))
 model.add(Dense(2, activation='softmax'))
 
 # TODO: Compile the model using a loss function and an optimizer.
-
+IMBD_Model.compile(loss="categorical_cross", optimizer="adam", metrics=["accuracy"])
+IMBD_Model.summary()
 
 # ## 5. Training the model
 # Run the model here. Experiment with different batch_size, and number of epochs!
