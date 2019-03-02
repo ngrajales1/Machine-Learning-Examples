@@ -34,7 +34,7 @@ print(x_test.shape)
 
 # ## 2. Examining the data
 # Notice that the data has been already pre-processed, where all the words have numbers, and the reviews come in as a vector with the words that the review contains. For example, if the word 'the' is the first one in our dictionary, and a review contains the word 'the', then there is a 1 in the corresponding vector.
-# 
+#
 # The output comes as a vector of 1's and 0's, where 1 is a positive sentiment for the review, and 0 is negative.
 
 # In[ ]:
@@ -77,6 +77,10 @@ print(y_test.shape)
 
 
 # TODO: Build the model architecture
+#creating the sequential model
+IMBD_Model = Sequential
+
+model.add(Dense(128, activation='relu', input_dim=1000))
 
 # TODO: Compile the model using a loss function and an optimizer.
 
@@ -98,4 +102,3 @@ print(y_test.shape)
 
 score = model.evaluate(x_test, y_test, verbose=0)
 print("Accuracy: ", score[1])
-
