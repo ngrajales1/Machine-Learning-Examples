@@ -100,7 +100,7 @@ IMBD_Model.summary()
 
 
 # TODO: Run the model. Feel free to experiment with different batch sizes and number of epochs.
-IMBD_Model.fit(x_train,y_train,epochs=200, batch_size=100, verbose=0)
+IMBD_Model.fit(x_train,y_train,epochs=10, batch_size=25, verbose=0)
 
 # ## 6. Evaluating the model
 # This will give you the accuracy of the model, as evaluated on the testing set. Can you get something over 85%?
