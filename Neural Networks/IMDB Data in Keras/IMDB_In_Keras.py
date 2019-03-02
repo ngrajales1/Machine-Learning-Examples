@@ -82,6 +82,7 @@ print(y_test.shape)
 IMBD_Model = Sequential()
 
 #First Layer
+# I chose relu because of a blog I read where it mentioned it is being used more often.
 IMBD_Model.add(Dense(512, activation='relu', input_dim=1000))
 
 #adding dropout to layer to avoid overfitting
