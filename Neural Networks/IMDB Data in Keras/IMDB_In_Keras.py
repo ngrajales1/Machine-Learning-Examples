@@ -80,7 +80,12 @@ print(y_test.shape)
 #creating the sequential model
 IMBD_Model = Sequential
 
+#First Layer
 model.add(Dense(128, activation='relu', input_dim=1000))
+#second Layer
+model.add(Dense(64, activation='sigmoid'))
+#output layer
+model.add(Dense(2, activation='softmax'))
 
 # TODO: Compile the model using a loss function and an optimizer.
 
