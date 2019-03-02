@@ -86,7 +86,7 @@ IMBD_Model = Sequential()
 IMBD_Model.add(Dense(512, activation='relu', input_dim=1000))
 
 #adding dropout to layer to avoid overfitting
-IMBD_Model.add(Dropout(.2))
+IMBD_Model.add(Dropout(.5))
 #output layer
 IMBD_Model.add(Dense(2, activation='softmax'))
 
@@ -109,7 +109,7 @@ IMBD_Model.fit(x_train,y_train,epochs=10, batch_size=25, verbose=2)
 # In[ ]:
 
 
-score = model.evaluate(x_test, y_test, verbose=0)
+score = model.evaluate(x_test, y_test, verbose=1)
 print("Accuracy: ", score[1])
 
-#accuracy = 83%
+#accuracy = 85%
