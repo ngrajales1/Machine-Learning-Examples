@@ -88,7 +88,7 @@ IMBD_Model.add(Dense(64, activation='sigmoid'))
 IMBD_Model.add(Dense(2, activation='softmax'))
 
 # TODO: Compile the model using a loss function and an optimizer.
-IMBD_Model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
+IMBD_Model.compile(loss="mean_squared_error", optimizer="adam", metrics=["accuracy"])
 IMBD_Model.summary()
 
 # ## 5. Training the model
