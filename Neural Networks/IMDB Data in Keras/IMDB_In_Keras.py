@@ -110,3 +110,5 @@ IMBD_Model.fit(x_train,y_train,epochs=10, batch_size=25, verbose=0)
 
 score = model.evaluate(x_test, y_test, verbose=0)
 print("Accuracy: ", score[1])
+
+#accuracy = 83%
