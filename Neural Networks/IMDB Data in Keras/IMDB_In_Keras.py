@@ -81,11 +81,11 @@ print(y_test.shape)
 IMBD_Model = Sequential
 
 #First Layer
-model.add(Dense(128, activation='relu', input_dim=1000))
+IMBD_Model.add(Dense(128, activation='relu', input_dim=1000))
 #second Layer
-model.add(Dense(64, activation='sigmoid'))
+IMBD_Model.add(Dense(64, activation='sigmoid'))
 #output layer
-model.add(Dense(2, activation='softmax'))
+IMBD_Model.add(Dense(2, activation='softmax'))
 
 # TODO: Compile the model using a loss function and an optimizer.
 IMBD_Model.compile(loss="categorical_cross", optimizer="adam", metrics=["accuracy"])
